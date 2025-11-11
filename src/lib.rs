@@ -275,6 +275,7 @@ impl<'a> Token<'a> {
                     if let Some(c) = TOKEN_MAPPING[i] {
                         if c == t {
                             string.push((i as u8) as char);
+                            break;
                         }
                     }
                 }
